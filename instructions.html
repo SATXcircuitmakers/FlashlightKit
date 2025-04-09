@@ -3,54 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Antonio Circuit Makers - Flashlight Assembly Guide</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            margin-top: 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 1rem 0;
-        }
-        .step {
-            margin-bottom: 2rem;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
-            color: white;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>San Antonio Circuit Makers</title>
+    <link rel="stylesheet" href="https://satxcircuitmakers.github.io/Main/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>San Antonio Circuit Makers</h1>
-        <p>Flashlight Assembly Guide</p>
-    </header>
+    <div id="header"></div>
+
     <div class="container">
         <div class="step">
             <h2>Step 1: Gather Your Components</h2>
@@ -133,5 +92,12 @@
     <footer>
         &copy; 2024 San Antonio Circuit Makers. All rights reserved.
     </footer>
+    <script>
+        $(function(){
+          $("#header").load("https://satxcircuitmakers.github.io/Main/site/header.html",function(){
+            $('#header-subtitle').html('Flashlight Kit Instructions');
+          });
+        });
+      </script>
 </body>
 </html>
